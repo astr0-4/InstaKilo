@@ -10,6 +10,5 @@
 
 @interface PhotoCell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *cellPhoto;
-@property (strong, nonatomic) NSString *subject;
 
 @end

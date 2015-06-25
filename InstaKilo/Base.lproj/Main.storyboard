@@ -51,12 +51,12 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="&quot;Header&quot;" id="BCZ-CT-ivH" customClass="Header">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="BCZ-CT-ivH" customClass="Header">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEk-Dz-gG4">
-                                            <rect key="frame" x="18" y="14" width="197" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEk-Dz-gG4">
+                                            <rect key="frame" x="18" y="14" width="574" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -65,7 +65,6 @@
                                     <constraints>
                                         <constraint firstAttribute="bottomMargin" secondItem="OEk-Dz-gG4" secondAttribute="bottom" constant="7" id="8e2-Wu-ZA2"/>
                                         <constraint firstItem="OEk-Dz-gG4" firstAttribute="leading" secondItem="BCZ-CT-ivH" secondAttribute="leadingMargin" constant="10" id="Mft-8k-mi5"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="OEk-Dz-gG4" secondAttribute="trailing" constant="377" id="Siw-qU-RLF"/>
                                         <constraint firstItem="OEk-Dz-gG4" firstAttribute="top" secondItem="BCZ-CT-ivH" secondAttribute="topMargin" constant="6" id="iJt-6w-WsJ"/>
                                     </constraints>
                                     <connections>

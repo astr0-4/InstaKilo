@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "PhotoCell.h"
 #import "Header.h"
+#import "Photo.h"
 
 @interface ViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 

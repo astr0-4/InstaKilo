@@ -26,6 +26,7 @@
 		FA987F051B3C5219005CEBF5 /* GOPR1208.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA987F041B3C5219005CEBF5 /* GOPR1208.JPG */; };
 		FA987F081B3C55A5005CEBF5 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987F071B3C55A5005CEBF5 /* PhotoCell.m */; };
 		FA987F0B1B3C86F9005CEBF5 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987F0A1B3C86F9005CEBF5 /* Header.m */; };
+		FA987F0E1B3C968C005CEBF5 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987F0D1B3C968C005CEBF5 /* Photo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		FA987F071B3C55A5005CEBF5 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
 		FA987F091B3C86F9005CEBF5 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		FA987F0A1B3C86F9005CEBF5 /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
+		FA987F0C1B3C968C005CEBF5 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		FA987F0D1B3C968C005CEBF5 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				FA987F071B3C55A5005CEBF5 /* PhotoCell.m */,
 				FA987F091B3C86F9005CEBF5 /* Header.h */,
 				FA987F0A1B3C86F9005CEBF5 /* Header.m */,
+				FA987F0C1B3C968C005CEBF5 /* Photo.h */,
+				FA987F0D1B3C968C005CEBF5 /* Photo.m */,
 				FA987ED31B3C4F9D005CEBF5 /* ViewController.h */,
 				FA987ED41B3C4F9D005CEBF5 /* ViewController.m */,
 				FA987ED61B3C4F9D005CEBF5 /* Main.storyboard */,
@@ -269,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA987F0E1B3C968C005CEBF5 /* Photo.m in Sources */,
 				FA987F081B3C55A5005CEBF5 /* PhotoCell.m in Sources */,
 				FA987ED51B3C4F9D005CEBF5 /* ViewController.m in Sources */,
 				FA987ED21B3C4F9D005CEBF5 /* AppDelegate.m in Sources */,
