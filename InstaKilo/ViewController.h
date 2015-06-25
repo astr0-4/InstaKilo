@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PhotoCell.h"
+#import "Header.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+
+
 
 
 @end

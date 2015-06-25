@@ -14,6 +14,18 @@
 		FA987EDA1B3C4F9D005CEBF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA987ED91B3C4F9D005CEBF5 /* Images.xcassets */; };
 		FA987EDD1B3C4F9D005CEBF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA987EDB1B3C4F9D005CEBF5 /* LaunchScreen.xib */; };
 		FA987EE91B3C4F9D005CEBF5 /* InstaKiloTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987EE81B3C4F9D005CEBF5 /* InstaKiloTests.m */; };
+		FA987EF31B3C4FF0005CEBF5 /* G0180743.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA987EF21B3C4FF0005CEBF5 /* G0180743.JPG */; };
+		FA987EF51B3C500F005CEBF5 /* G0211200.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA987EF41B3C500F005CEBF5 /* G0211200.JPG */; };
+		FA987EF71B3C509F005CEBF5 /* GOPR0258.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA987EF61B3C509F005CEBF5 /* GOPR0258.JPG */; };
+		FA987EF91B3C50CB005CEBF5 /* GOPR0208.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA987EF81B3C50CB005CEBF5 /* GOPR0208.JPG */; };
+		FA987EFB1B3C50E4005CEBF5 /* GOPR0267.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA987EFA1B3C50E4005CEBF5 /* GOPR0267.JPG */; };
+		FA987EFD1B3C5104005CEBF5 /* GOPR0298.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA987EFC1B3C5104005CEBF5 /* GOPR0298.JPG */; };
+		FA987EFF1B3C5113005CEBF5 /* GOPR0407.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA987EFE1B3C5113005CEBF5 /* GOPR0407.JPG */; };
+		FA987F011B3C51BA005CEBF5 /* GOPR1297.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA987F001B3C51BA005CEBF5 /* GOPR1297.JPG */; };
+		FA987F031B3C51FA005CEBF5 /* GOPR1335.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA987F021B3C51FA005CEBF5 /* GOPR1335.JPG */; };
+		FA987F051B3C5219005CEBF5 /* GOPR1208.JPG in Resources */ = {isa = PBXBuildFile; fileRef = FA987F041B3C5219005CEBF5 /* GOPR1208.JPG */; };
+		FA987F081B3C55A5005CEBF5 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987F071B3C55A5005CEBF5 /* PhotoCell.m */; };
+		FA987F0B1B3C86F9005CEBF5 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987F0A1B3C86F9005CEBF5 /* Header.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +52,20 @@
 		FA987EE21B3C4F9D005CEBF5 /* InstaKiloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstaKiloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA987EE71B3C4F9D005CEBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA987EE81B3C4F9D005CEBF5 /* InstaKiloTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaKiloTests.m; sourceTree = "<group>"; };
+		FA987EF21B3C4FF0005CEBF5 /* G0180743.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = G0180743.JPG; sourceTree = "<group>"; };
+		FA987EF41B3C500F005CEBF5 /* G0211200.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = G0211200.JPG; sourceTree = "<group>"; };
+		FA987EF61B3C509F005CEBF5 /* GOPR0258.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GOPR0258.JPG; sourceTree = "<group>"; };
+		FA987EF81B3C50CB005CEBF5 /* GOPR0208.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GOPR0208.JPG; sourceTree = "<group>"; };
+		FA987EFA1B3C50E4005CEBF5 /* GOPR0267.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GOPR0267.JPG; sourceTree = "<group>"; };
+		FA987EFC1B3C5104005CEBF5 /* GOPR0298.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GOPR0298.JPG; sourceTree = "<group>"; };
+		FA987EFE1B3C5113005CEBF5 /* GOPR0407.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GOPR0407.JPG; sourceTree = "<group>"; };
+		FA987F001B3C51BA005CEBF5 /* GOPR1297.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GOPR1297.JPG; sourceTree = "<group>"; };
+		FA987F021B3C51FA005CEBF5 /* GOPR1335.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GOPR1335.JPG; sourceTree = "<group>"; };
+		FA987F041B3C5219005CEBF5 /* GOPR1208.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GOPR1208.JPG; sourceTree = "<group>"; };
+		FA987F061B3C55A5005CEBF5 /* PhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		FA987F071B3C55A5005CEBF5 /* PhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		FA987F091B3C86F9005CEBF5 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		FA987F0A1B3C86F9005CEBF5 /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +109,24 @@
 			children = (
 				FA987ED01B3C4F9D005CEBF5 /* AppDelegate.h */,
 				FA987ED11B3C4F9D005CEBF5 /* AppDelegate.m */,
+				FA987F061B3C55A5005CEBF5 /* PhotoCell.h */,
+				FA987F071B3C55A5005CEBF5 /* PhotoCell.m */,
+				FA987F091B3C86F9005CEBF5 /* Header.h */,
+				FA987F0A1B3C86F9005CEBF5 /* Header.m */,
 				FA987ED31B3C4F9D005CEBF5 /* ViewController.h */,
 				FA987ED41B3C4F9D005CEBF5 /* ViewController.m */,
 				FA987ED61B3C4F9D005CEBF5 /* Main.storyboard */,
 				FA987ED91B3C4F9D005CEBF5 /* Images.xcassets */,
+				FA987EF61B3C509F005CEBF5 /* GOPR0258.JPG */,
+				FA987EF81B3C50CB005CEBF5 /* GOPR0208.JPG */,
+				FA987EF41B3C500F005CEBF5 /* G0211200.JPG */,
+				FA987EF21B3C4FF0005CEBF5 /* G0180743.JPG */,
+				FA987F041B3C5219005CEBF5 /* GOPR1208.JPG */,
+				FA987F021B3C51FA005CEBF5 /* GOPR1335.JPG */,
+				FA987EFE1B3C5113005CEBF5 /* GOPR0407.JPG */,
+				FA987EFA1B3C50E4005CEBF5 /* GOPR0267.JPG */,
+				FA987F001B3C51BA005CEBF5 /* GOPR1297.JPG */,
+				FA987EFC1B3C5104005CEBF5 /* GOPR0298.JPG */,
 				FA987EDB1B3C4F9D005CEBF5 /* LaunchScreen.xib */,
 				FA987ECC1B3C4F9D005CEBF5 /* Supporting Files */,
 			);
@@ -200,8 +240,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA987ED81B3C4F9D005CEBF5 /* Main.storyboard in Resources */,
+				FA987EF31B3C4FF0005CEBF5 /* G0180743.JPG in Resources */,
+				FA987EFD1B3C5104005CEBF5 /* GOPR0298.JPG in Resources */,
+				FA987EFB1B3C50E4005CEBF5 /* GOPR0267.JPG in Resources */,
+				FA987EF71B3C509F005CEBF5 /* GOPR0258.JPG in Resources */,
 				FA987EDD1B3C4F9D005CEBF5 /* LaunchScreen.xib in Resources */,
+				FA987F011B3C51BA005CEBF5 /* GOPR1297.JPG in Resources */,
+				FA987EFF1B3C5113005CEBF5 /* GOPR0407.JPG in Resources */,
 				FA987EDA1B3C4F9D005CEBF5 /* Images.xcassets in Resources */,
+				FA987EF91B3C50CB005CEBF5 /* GOPR0208.JPG in Resources */,
+				FA987EF51B3C500F005CEBF5 /* G0211200.JPG in Resources */,
+				FA987F051B3C5219005CEBF5 /* GOPR1208.JPG in Resources */,
+				FA987F031B3C51FA005CEBF5 /* GOPR1335.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +269,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA987F081B3C55A5005CEBF5 /* PhotoCell.m in Sources */,
 				FA987ED51B3C4F9D005CEBF5 /* ViewController.m in Sources */,
 				FA987ED21B3C4F9D005CEBF5 /* AppDelegate.m in Sources */,
 				FA987ECF1B3C4F9D005CEBF5 /* main.m in Sources */,
+				FA987F0B1B3C86F9005CEBF5 /* Header.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
