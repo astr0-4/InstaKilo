@@ -12,7 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSArray *photos;
-@property (nonatomic, strong) NSArray *numberOfSections;
+@property (nonatomic, strong) NSArray *sections;
 
 
 @end
@@ -90,73 +90,55 @@
         [tempSet addObject:photo.subject];
         }
     NSLog(@"number of sections: %lu", [tempSet count]);
+    self.sections = [tempSet allObjects];
+    NSLog(@"%@", self.sections);
     return [tempSet count];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
+    // this method says how many sections we need
+    NSString *sectionTitle = self.sections[section];
     int x = 0;
-    int y = 0;
-    int z = 0;
     for (Photo *photo in self.photos){
-        if([photo.subject isEqualToString: @"Beach"]) {
+        if([photo.subject isEqualToString:sectionTitle]) {
             x++;
         }
-        else if ([photo.subject isEqualToString:@"Safari"]) {
-            y++;
-        }
-        else {
-            z++;
-        }
     }
-    if(section == 0) {
-        NSLog(@"x is %d", x);
-        return x;
-    }
-    else if (section == 1) {
-        NSLog(@"y is %d", y);
-        return y;
-    }
-    else if(section == 2) {
-        NSLog(@"z is %d", z);
-        return z;
-    }
-    
-    return 0;
-    
+    return x;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    // this method makes the cells
     PhotoCell *photoCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-    for(Photo *photo in self.photos) {
-        photoCell.cellPhoto.image = [UIImage imageNamed:photo.fileName];
+    
+    NSString *sectionTitle = self.sections[indexPath.section];
+    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+    for (Photo *photo in self.photos){
+        if([photo.subject isEqualToString:sectionTitle]) {
+            [tempArray addObject: photo.fileName];
+        }
     }
-
+    photoCell.cellPhoto.image = [UIImage imageNamed:[tempArray objectAtIndex:indexPath.row]];
+    
     return photoCell;
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+//this method sets the header
 {
     if (kind == UICollectionElementKindSectionHeader) {
         Header *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"Header" forIndexPath:indexPath];
         NSMutableArray *tempArray;
         for (Photo *photo in self.photos) {
-            [tempArray addObject: photo.location];
+            [tempArray addObject:photo.subject];
         }
-        
-        NSString *title = tempArray[indexPath.section];
-       headerView.headerLabel.text = title;
-        
+
+        headerView.headerLabel.text = self.sections[indexPath.section];
         return headerView;
     }
-    
     return nil;
 }
-
-
-
-
-
 
 @end
