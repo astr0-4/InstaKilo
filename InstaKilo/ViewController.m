@@ -27,7 +27,10 @@
 }
 - (void)viewDidLoad
 {
+    
+
     [super viewDidLoad];
+ 
     
     Photo *photo1 = [[Photo alloc] init];
     photo1.location = @"Masaai Mara";
@@ -89,10 +92,11 @@
     for(Photo *photo in self.photos) {
         [tempSet addObject:photo.subject];
         }
-    NSLog(@"number of sections: %lu", [tempSet count]);
+    NSLog(@"number of sections: %lu", (unsigned long)[tempSet count]);
     self.sections = [tempSet allObjects];
     NSLog(@"%@", self.sections);
     return [tempSet count];
+   // return 0;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -106,11 +110,15 @@
         }
     }
     return x;
+    //section = 0;
+    return [self.photos count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // this method makes the cells
+    
+    
     PhotoCell *photoCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
     
     NSString *sectionTitle = self.sections[indexPath.section];
@@ -118,27 +126,56 @@
     for (Photo *photo in self.photos){
         if([photo.subject isEqualToString:sectionTitle]) {
             [tempArray addObject: photo.fileName];
-        }
+       }
     }
+    NSLog(@"temp array of photos is: %@", tempArray);
     photoCell.cellPhoto.image = [UIImage imageNamed:[tempArray objectAtIndex:indexPath.row]];
     
     return photoCell;
 }
 
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-//this method sets the header
-{
-    if (kind == UICollectionElementKindSectionHeader) {
-        Header *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"Header" forIndexPath:indexPath];
-        NSMutableArray *tempArray;
-        for (Photo *photo in self.photos) {
-            [tempArray addObject:photo.subject];
-        }
+//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+////this method sets the header
+//{
+//    if (kind == UICollectionElementKindSectionHeader) {
+//        Header *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"Header" forIndexPath:indexPath];
+//        NSMutableArray *tempArray;
+//        for (Photo *photo in self.photos) {
+//            [tempArray addObject:photo.subject];
+//        }
+//
+//        headerView.headerLabel.text = self.sections[indexPath.section];
+//        return headerView;
+//    }
+//    return nil;
+//}
+//- (CGSize)collectionView:(UICollectionView *)collectionView
+//                  layout:(UICollectionViewLayout *)collectionViewLayout
+//  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return CGSizeMake(300, 200);
+//}
+//
+//- (CGSize)collectionView:(UICollectionView *)collectionView
+//                  layout:(UICollectionViewLayout *)collectionViewLayout
+//referenceSizeForHeaderInSection:(NSInteger)section
+//{
+//        return CGSizeMake(100, 100);
+//}
 
-        headerView.headerLabel.text = self.sections[indexPath.section];
-        return headerView;
-    }
-    return nil;
+- (CGFloat)collectionView:(UICollectionView *)collectionView
+                   layout:(UICollectionViewLayout *)collectionViewLayout
+minimumLineSpacingForSectionAtIndex:(NSInteger)section
+{
+    return 10.0;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    // If you need to use the touched cell, you can retrieve it like so
+    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    
+    NSLog(@"touched cell %@ at indexPath %@", cell, indexPath);
 }
 
 @end

@@ -10,11 +10,9 @@
 #import "PhotoCell.h"
 #import "Header.h"
 #import "Photo.h"
+#import "CoverFlowLayout.h"
 
 @interface ViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
-
-
-
 
 @end
 

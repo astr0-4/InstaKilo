@@ -27,6 +27,8 @@
 		FA987F081B3C55A5005CEBF5 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987F071B3C55A5005CEBF5 /* PhotoCell.m */; };
 		FA987F0B1B3C86F9005CEBF5 /* Header.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987F0A1B3C86F9005CEBF5 /* Header.m */; };
 		FA987F0E1B3C968C005CEBF5 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987F0D1B3C968C005CEBF5 /* Photo.m */; };
+		FA987FEC1B3DD49B005CEBF5 /* CoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FA987FEB1B3DD49B005CEBF5 /* CoverFlowLayout.m */; };
+		FA9880211B3F084A005CEBF5 /* CoverFlowCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA9880201B3F084A005CEBF5 /* CoverFlowCollectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,10 @@
 		FA987F0A1B3C86F9005CEBF5 /* Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Header.m; sourceTree = "<group>"; };
 		FA987F0C1B3C968C005CEBF5 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		FA987F0D1B3C968C005CEBF5 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		FA987FEA1B3DD49B005CEBF5 /* CoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverFlowLayout.h; sourceTree = "<group>"; };
+		FA987FEB1B3DD49B005CEBF5 /* CoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverFlowLayout.m; sourceTree = "<group>"; };
+		FA98801F1B3F084A005CEBF5 /* CoverFlowCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoverFlowCollectionView.h; path = ../CoverFlowCollectionView.h; sourceTree = "<group>"; };
+		FA9880201B3F084A005CEBF5 /* CoverFlowCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoverFlowCollectionView.m; path = ../CoverFlowCollectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,10 @@
 				FA987F0A1B3C86F9005CEBF5 /* Header.m */,
 				FA987F0C1B3C968C005CEBF5 /* Photo.h */,
 				FA987F0D1B3C968C005CEBF5 /* Photo.m */,
+				FA98801F1B3F084A005CEBF5 /* CoverFlowCollectionView.h */,
+				FA9880201B3F084A005CEBF5 /* CoverFlowCollectionView.m */,
+				FA987FEA1B3DD49B005CEBF5 /* CoverFlowLayout.h */,
+				FA987FEB1B3DD49B005CEBF5 /* CoverFlowLayout.m */,
 				FA987ED31B3C4F9D005CEBF5 /* ViewController.h */,
 				FA987ED41B3C4F9D005CEBF5 /* ViewController.m */,
 				FA987ED61B3C4F9D005CEBF5 /* Main.storyboard */,
@@ -275,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA987F0E1B3C968C005CEBF5 /* Photo.m in Sources */,
+				FA987FEC1B3DD49B005CEBF5 /* CoverFlowLayout.m in Sources */,
+				FA9880211B3F084A005CEBF5 /* CoverFlowCollectionView.m in Sources */,
 				FA987F081B3C55A5005CEBF5 /* PhotoCell.m in Sources */,
 				FA987ED51B3C4F9D005CEBF5 /* ViewController.m in Sources */,
 				FA987ED21B3C4F9D005CEBF5 /* AppDelegate.m in Sources */,
@@ -474,6 +486,7 @@
 				FA987EEE1B3C4F9D005CEBF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA987EEF1B3C4F9D005CEBF5 /* Build configuration list for PBXNativeTarget "InstaKiloTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +495,7 @@
 				FA987EF11B3C4F9D005CEBF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
